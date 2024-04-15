@@ -1,0 +1,8 @@
+name: saAntiGrief
+version: 1.0
+main: me.samul.saantigrief.SaAntiGrief
+load: STARTUP
+authors: [samulsz]
+description: A simple plugin to prevent staffs grief your server
+commands:
+  antigrief:

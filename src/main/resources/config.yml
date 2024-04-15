@@ -1,0 +1,54 @@
+#  _____                         _   _   _______   _____    _____   _____    _____   ______   ______
+# / ____|     /\         /\     | \ | | |__   __| |_   _|  / ____| |  __ \  |_   _| |  ____| |  ____|
+# | (___     /  \       /  \    |  \| |    | |      | |   | |  __  | |__) |   | |   | |__    | |__
+# \___ \    / /\ \     / /\ \   | . ` |    | |      | |   | | |_ | |  _  /    | |   |  __|   |  __|
+# ____) |  / ____ \   / ____ \  | |\  |    | |     _| |_  | |__| | | | \ \   _| |_  | |____  | |
+# |_____/ /_/    \_\ /_/    \_\ |_| \_|    |_|    |_____|  \_____| |_|  \_\ |_____| |______| |_|
+
+
+
+
+Configuration:
+  #reset the players gamemode on loggin in server to gamemode survival
+  reset-gamemode: true
+  #prevent player to break blocks if are not logged in
+  prevent-break: true
+  #prevent player to place blocks if are not logged in
+  prevent-place: true
+  #prevent player to pickup itens if are not logged in
+  prevent-pickup: true
+  #prevent player to drop itens if are not logged in
+  prevent-drop: true
+  #prevent player to teleport if are note logged in
+  prevent-teleport: true
+  #prevent player to open chests if are note logged in
+  prevent-chests: true
+  #prevent player to execute the commands of the blocked-commands list
+  prevent-commands: true
+  #list of commands that will be blocked if the player has the permission and is not logged in
+  blocked-commands:
+    - '/login'
+    - '/logar'
+    - '/g'
+    - '/mv'
+    - '/example'
+  #pass to log in with /antigrief command. usage: /antigrief saantigrief000
+  password: 'saantigrief000'
+  #a permission to use the /af
+  permission: 'saantigrief.staff'
+
+  wrong-pass-commands:
+    - 'kick {player} AntiGrief Prevention!'
+
+Messages:
+  login-failure: '&c&lERROR! &cYou got the password wrong!'
+  login-success: '&a&lSUCCESS! &aNow, you are in the logged in list!'
+  no-permission: '&c&lERROR! &cYou dont have permission to use this command!'
+  is-not-logged: '&c&lERROR! &cYou are not logged in! Please use &f/af <pass> &ccommand to complete your login!'
+  incorrectly-usage: '&c&lERROR! &cUsage: &7/antigrief <pass>&c!'
+  already-logged: '&c&lERROR! &cYou already has been logged in!'
+  staff-wrong-pass: '&c&lIMPORTANT! &cThe player &f{payer} &chas insert the password wrong'
+  only-players: '&c&lERROR! &cOnly players can realize the antigrief login!'
+  blocked-message: '&c&lERROR! &cYou are not logged in to perform this, please use &7/antigrief <password> &cto this.'
+  reloaded: '&a&lSUCCESS! &aThe config has bem reloaded!'
+
